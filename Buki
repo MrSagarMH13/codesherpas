@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "bfe517f5-7ed1-4157-81e5-57a1e06aae5f",
+		"name": "BarTapDispenser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13252121"
+	},
+	"item": [
+		{
+			"name": "Create Dispenser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/dispensers?flowVolume=10.5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"dispensers"
+					],
+					"query": [
+						{
+							"key": "flowVolume",
+							"value": "10.5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Dispenser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/dispensers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"dispensers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open Dispenser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/dispensers/1/open",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"dispensers",
+						"1",
+						"open"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Close Dispenser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/dispensers/1/close",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"dispensers",
+						"1",
+						"close"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dispenser Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/dispensers/1/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"dispensers",
+						"1",
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
